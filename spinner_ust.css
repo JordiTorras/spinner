@@ -1,0 +1,25 @@
+.spinner_ust {
+    width: 320px;
+    height: 320px;        
+    animation-name: animacion_spinner;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;    
+    
+}
+
+@keyframes animacion_spinner{
+    0% { background: url(./vectorpaint.svg);}
+    50%{ opacity: 0;}
+    50%{ background: url(./vectorpaint.svg);}
+    100% { opacity: 1;}
+    100%{ background: url(./vectorpaint.svg);}
+    100%{ -webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+
+
+
+
+
