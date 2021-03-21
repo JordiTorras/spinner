@@ -1,44 +1,42 @@
-.spiner {
-    width: 100px;
-    height: 100px;
-    /*  background-color: beige; */
+:root {
+    --duration-spiner-itaca: 7.7s; /* 7.7s es la duració original */
+}
+
+.spiner_itaca {
+    width: var(--main-box);
+    height: var(--main-box);
     position: relative;
-    z-index: 0;
 }
 .autos {
     position: absolute;
     animation-name: animacion_autos;
-    animation-duration: 7.7s;
+    animation-duration: var(--duration-spiner-itaca);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    z-index: 100;
 }
 
 .punto {
     position: absolute;
     animation-name: animacion_punto;
-    animation-duration: 7.7s;
+    animation-duration: var(--duration-spiner-itaca);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    z-index: 100;
 }
 
 .accidentes {
     position: absolute;
     animation-name: animacion_accidentes;
-    animation-duration: 7.7s;
+    animation-duration: var(--duration-spiner-itaca);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    z-index: 100;
 }
 
 .hogar {
     position: absolute;
     animation-name: animacion_hogar;
-    animation-duration: 7.7s;
+    animation-duration: var(--duration-spiner-itaca);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    z-index: 100;
 }
 
 /* superior esquerra */
@@ -47,20 +45,20 @@
     0%  { top: 0px; left: 0px; width: 50px; height: 50px; background-color: black; opacity: 1;}
     5% { top: 15px; left: 15px; width: 20px; height: 20px; background-color: black; opacity: 1;}
     10% { top: 15px; left: 15px; width: 20px; height: 20px; background-color: black; opacity: 1;}
-    13.5% { top: 21px; left: 21px; width: 4px; height: 4px; background-color: black; opacity: 1;}
-    16.5% { top: 21px; left: 21px; width: 4px; height: 4px; background: url(./u.svg); opacity: 0; }
+    13.5% { top: 22px; left: 22px; width: 6px; height: 6px; background-color: black; opacity: 1;}
+    16.5% { top: 22px; left: 22px; width: 6px; height: 6px; background: url(./u.svg); opacity: 0; }
     20% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     30% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     33.5% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     36.5% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     40% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     50% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
-    53.5% { top: 21px; left: 21px; width: 4px; height: 4px; background: url(./u.svg); opacity: 0; }
-    56.5% { top: 21px; left: 21px; width: 4px; height: 4px; background: url(./u.svg); opacity: 0; }
+    53.5% { top: 22px; left: 22px; width: 6px; height: 6px; background: url(./u.svg); opacity: 0; }
+    56.5% { top: 22px; left: 22px; width: 6px; height: 6px; background: url(./u.svg); opacity: 0; }
     60% { top: 15px; left: 15px; width: 20px; height: 20px; background: black; opacity: 1; }
     70% { top: 15px; left: 15px; width: 20px; height: 20px; background: black; opacity: 1; }
-    73.5% { top: 21px; left: 21px; width: 4px; height: 4px; background: black; opacity: 0; }
-    76.5% { top: 21px; left: 21px; width: 4px; height: 4px; background: black; opacity: 0; }
+    73.5% { top: 22px; left: 22px; width: 6px; height: 6px; background: black; opacity: 0; }
+    76.5% { top: 22px; left: 22px; width: 6px; height: 6px; background: black; opacity: 0; }
     80% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     100% { top: 5px; left: 5px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
 }
@@ -75,17 +73,17 @@
     16.5% { top: 15px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1;}
     20% { top: 15px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1;}
     30% { top: 15px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1;}
-    33.5% { top: 21px; left: 71px; width: 4px; height: 4px; background-color: black; opacity: 0; }
-    36.5% { top: 21px; left: 71px; width: 4px; height: 4px; background-color: black; opacity: 0; }
-    36.5% { top: 21px; left: 71px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
+    33.5% { top: 22px; left: 72px; width: 6px; height: 6px; background-color: black; opacity: 0; }
+    36.5% { top: 22px; left: 72px; width: 6px; height: 6px; background-color: black; opacity: 0; }
+    36.5% { top: 22px; left: 72px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
     40% { top: 5px; left: 55px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
     50% { top: 5px; left: 55px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
-    53.5% { top: 21px; left: 71px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
-    56.5% { top: 21px; left: 71px; width: 4px; height: 4px; background: url(./u.svg); opacity: 0; }
+    53.5% { top: 22px; left: 72px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
+    56.5% { top: 22px; left: 72px; width: 6px; height: 6px; background: url(./u.svg); opacity: 0; }
     60% { top: 5px; left: 55px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
     70% { top: 5px; left: 55px; width: 40px; height: 40px; background: url(./u.svg); opacity: 1; }
-    73.5% { top: 21px; left: 71px; width: 4px; height: 4px; background: url(./u.svg); opacity: 0; }
-    76.5% { top: 21px; left: 71px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
+    73.5% { top: 22px; left: 72px; width: 6px; height: 6px; background: url(./u.svg); opacity: 0; }
+    76.5% { top: 22px; left: 72px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
     80% { top: 5px; left: 55px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
     100% { top: 5px; left: 55px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
 }
@@ -96,23 +94,23 @@
     0%  { top: 50px; left: 0px; width: 50px; height: 50px; background-color: black; opacity: 1;}
     5% { top: 65px; left: 15px; width: 20px; height: 20px; background-color: black; opacity: 1;}
     10% { top: 65px; left: 15px; width: 20px; height: 20px; background-color: black; opacity: 1;}
-    13.5% { top: 71px; left: 21px; width: 4px; height: 4px; background-color: black; opacity: 0;}
-    16.5% { top: 71px; left: 21px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
+    13.5% { top: 72px; left: 22px; width: 6px; height: 6px; background-color: black; opacity: 0;}
+    16.5% { top: 72px; left: 22px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
     20% { top: 55px; left: 5px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
     30% { top: 55px; left: 5px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
-    33.5% { top: 71px; left: 21px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
-    36.5% { top: 71x; left: 21px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
-    36.5% { top: 71x; left: 21px; width: 4px; height: 4px; background-color: black; opacity: 0; }
+    33.5% { top: 72px; left: 22px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
+    36.5% { top: 72px; left: 22px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
+    36.5% { top: 72px; left: 22px; width: 6px; height: 6px; background-color: black; opacity: 0; }
     40% { top: 65px; left: 15px; width: 20px; height: 20px; background-color: black; opacity: 1; }
     50% { top: 65px; left: 15px; width: 20px; height: 20px; background-color: black; opacity: 1; }
-    53.5% { top: 71px; left: 21px; width: 4px; height: 4px; background-color: black; opacity: 0; }
-    56.5% { top: 71px; left: 21px; width: 4px; height: 4px; background-color: black; opacity: 0; }
-    56.5% { top: 71px; left: 21px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
+    53.5% { top: 72px; left: 22px; width: 6px; height: 6px; background-color: black; opacity: 0; }
+    56.5% { top: 72px; left: 22px; width: 6px; height: 6px; background-color: black; opacity: 0; }
+    56.5% { top: 72px; left: 22px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
     60% { top: 55px; left: 5px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
     70% { top: 55px; left: 5px; width: 40px; height: 40px; background: url(./s.svg); opacity: 1; }
-    73.5% { top: 71px; left: 21px; width: 4px; height: 4px; background: url(./s.svg); opacity: 0; }
-    76.5% { top: 71px; left: 21px; width: 4px; height: 4px; background: url(/s.svg); opacity: 0; }
-    76.5% { top: 71px; left: 21px; width: 4px; height: 4px; background: url(/t.svg); opacity: 0; }
+    73.5% { top: 72px; left: 22px; width: 6px; height: 6px; background: url(./s.svg); opacity: 0; }
+    76.5% { top: 72px; left: 22px; width: 6px; height: 4px; background: url(/s.svg); opacity: 0; }
+    76.5% { top: 72px; left: 22px; width: 6px; height: 6px; background: url(/t.svg); opacity: 0; }
     80% { top: 55px; left: 5px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
     100% { top: 55px; left: 5px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
 }
@@ -123,18 +121,14 @@
     0%  { top: 50px; left: 50px; width: 50px; height: 50px; background-color: black; opacity: 1;}
     5% { top: 65px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1;}
     10% { top: 65px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1;}
-    13.5% { top: 71px; left: 71px; width: 4px; height: 4px; background-color: black; opacity: 0;}
-    16.5% { top: 71px; left: 71px; width: 4px; height: 4px; background-color: black; opacity: 0;}
-    16.5% { top: 71px; left: 71px; width: 4px; height: 4px; background: url(./t.svg); opacity: 0; }
-    20% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
-    30% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
-    40% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
-    50% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
-    60% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
+    13.5% { top: 72px; left: 72px; width: 6px; height: 6px; background-color: black; opacity: 0;}
+    16.5% { top: 72px; left: 72px; width: 6px; height: 6px; background-color: black; opacity: 0;}
+    16.5% { top: 72px; left: 72px; width: 6px; height: 6px; background: url(./t.svg); opacity: 0; }
+    20% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }    
     70% { top: 55px; left: 55px; width: 40px; height: 40px; background: url(./t.svg); opacity: 1; }
-    73.5% { top: 71px; left: 71px; width: 4px; height: 4px; background: url(./t.svg); opacity: 0; }
-    76.5% { top: 71px; left: 71px; width: 4px; height: 4px; background: url(/t.svg); opacity: 0; }
-    76.5% { top: 71px; left: 71px; width: 4px; height: 4px; background-color: black; opacity: 0; }
-    80% { top: 65px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1; }
+    73.5% { top: 72px; left: 72px; width: 6px; height: 6px; background: url(./t.svg); opacity: 0; }
+    76.5% { top: 72px; left: 72px; width: 6px; height: 6px; background: url(./t.svg); opacity: 0; }
+    76.5% { top: 72px; left: 72px; width: 6px; height: 6px; background-color: black; opacity: 0; }
+    80%  { top: 65px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1; }
     100% { top: 65px; left: 65px; width: 20px; height: 20px; background-color: black; opacity: 1; }
 }
